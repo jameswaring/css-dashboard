@@ -10,7 +10,7 @@ body div{
 
 .content{
     display: flex;
-    width: 800px;
+    width: 80%;
 }
 
 .dashboard{
@@ -34,19 +34,28 @@ body div{
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 150px;
-    background-color: antiquewhite;
+    background-color: white;
 }
 
 .inner-content{
     display: grid;
     grid-template-columns: 3fr 1fr;
     height: 100%;
+    padding-top: 30px;;
 }
 
 .projects{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+}
+
+.projects div{
+    border-width: 0px 0em 0px 10px;
+    margin: 8px;
+    background-color: rgb(232, 232, 232);
+    border-color: orange;
+    border-radius: 8px;
 }
 
 .right-content{
