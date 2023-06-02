@@ -2,10 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-body div{
-    border-style: solid;
+    background-color: aliceblue;
 }
 
 .content{
@@ -18,15 +15,15 @@ body div{
     flex-direction: column;
     flex: 1;
     align-items: flex-start;
-    height: 100vh;
-    background-color: rgb(91, 161, 221);
+    height: 98vh;
+    background-color: rgb(74, 149, 214);
 }
 
 .main-holder{
     display: flex;
     flex-direction: column;
-    flex: 3;
-    background-color: rgb(205, 205, 206);
+    flex: 4;
+    background-color: rgb(234, 237, 245);
 }
 
 .banner{
@@ -35,13 +32,15 @@ body div{
     grid-template-rows: 1fr 1fr;
     height: 150px;
     background-color: white;
+    box-shadow: 1px 3px 3px grey;
 }
 
 .inner-content{
     display: grid;
     grid-template-columns: 3fr 1fr;
     height: 100%;
-    padding-top: 30px;;
+    padding-top: 30px;
+    margin-bottom: 15px;
 }
 
 .projects{
@@ -52,13 +51,46 @@ body div{
 
 .projects div{
     border-width: 0px 0em 0px 10px;
-    margin: 8px;
-    background-color: rgb(232, 232, 232);
+    margin: 12px;
+    background-color: white;
     border-color: orange;
     border-radius: 8px;
+    box-shadow: 1px 3px 3px grey;
 }
 
 .right-content{
     display: flex;
     flex-direction: column;
+}
+
+.right-content div{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    margin: 12px;
+    border-radius: 8px;
+    box-shadow: 1px 3px 3px grey;
+}
+
+.card-title{
+    display: flex;
+    flex: 2;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.card-text{
+    display: flex;
+    flex: 2;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.card-icons{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    text-align: right;
 }
