@@ -111,8 +111,13 @@
                   <img src="images/share.svg" width="20px" height="20px" />
                 </div>
             </div>
-            <div id="project-card">
-              <div class="add-card">Click to add</div>
+            <div id="project-card" class="final-card">
+              <div class="add-card" id="add-msg">Click to add</div>
+              <form id="new-card" style="display: none;">
+                <input type="text" id="task-title" placeholder="Task Title">
+                <input type="text" id="details" placeholder="task details">
+                <input type="submit">
+               </form>
             </div>
           </div>
           <div class="right-content">
