@@ -1,4 +1,4 @@
-let final = document.getElementsByClassName("final-card")[0];
+let final = document.getElementById("first-card");
 let newCard = document.getElementById("new-card");
 final.addEventListener('click', (e) => {
     document.getElementById("add-msg").innerHTML = "";
