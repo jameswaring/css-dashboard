@@ -16,6 +16,7 @@ submit.addEventListener('click', (e) => {
         let innerTitle = card.getElementsByClassName("card-title")
         let innerDetails = card.getElementsByClassName("card-details")
         console.log(innerTitle)
+        // the below doesn't work, Inner Text returns undefined
         if (innerDetails.innerText === 'Nothing here yet...') {
             innerTitle.innerText = title;
             innerDetails.innerText = details;
