@@ -11,13 +11,14 @@ submit.addEventListener('click', (e) => {
     let title = document.getElementById("task-title").value;
     let details = document.getElementById("task-details").value;
     var cards = document.querySelectorAll('.project-card');
-    for (let i = 1; i < cards.length; i++) {
-        let innerTitle = cards[i].getElementsByClassName("task-title")[i]
-        let innerDetails = cards[i].getElementsByClassName("task-details")[i]
-        if (innerDetails.innerHTML === 'Nothing here yet...') {
-            innerTitle.html = title;
-            innerDetails.innerHTML = details;
-            break;
+    cards.forEach(function(card, index){
+        if (index === 0) return;
+        let innerTitle = card.getElementsByClassName("card-title")
+        let innerDetails = card.getElementsByClassName("card-details")
+        console.log(innerTitle)
+        if (innerDetails.innerText === 'Nothing here yet...') {
+            innerTitle.innerText = title;
+            innerDetails.innerText = details;
             }
-    }
+    })  
 })
