@@ -184,3 +184,31 @@ li:not(:last-child) {
     margin-bottom:30px;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#task-title,
+#task-details{
+    width: 98%
+}
+
+#task-details{
+    height: 80%;
+}
+
+.task-btn{
+    width: 80%;
+    height: 20%;
+    border-radius: 18px;
+    background-color: #1c89ff;
+    border: solid 1px transparent;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
