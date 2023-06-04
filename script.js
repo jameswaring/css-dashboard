@@ -14,12 +14,13 @@ submit.addEventListener('click', (e) => {
     cards.forEach(function(card, index){
         if (index === 0) return;
         let innerTitle = card.getElementsByClassName("card-title")
-        let innerDetails = card.getElementsByClassName("card-details")
-        console.log(innerTitle)
+        console.log(innerTitle[0].innerHTML)
+        let innerDetails = card.getElementsByClassName("card-text")
+        console.log(innerDetails[0].innerHTML)
         // the below doesn't work, Inner Text returns undefined
-        if (innerDetails.innerText === 'Nothing here yet...') {
-            innerTitle.innerText = title;
-            innerDetails.innerText = details;
+        if (innerDetails[0].innerHTML === 'Nothing here yet...') {
+            innerTitle[0].innerHTML = title;
+            innerDetails[0].innerHTML = details;
             }
     })  
 })
