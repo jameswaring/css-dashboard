@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
@@ -14,95 +17,97 @@
     <div class="content">
       <div class="dashboard">
         <div>welcome</div>
-            <div id="banner-list">
-                <ul>
-                    <li>test</li>
-                    <li>test</li>
-                    <li>test</li>
-                    <li>test</li>
-                    <li>test</li>
-                </ul>   
-            <div id="banner-list">
-                <ul>
-                    <li>test</li>
-                    <li>test</li>
-                    <li>test</li>
-                </ul>   
-            </div>
-            </div>
+        <div id="banner-list">
+          <ul>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+          </ul>
+          <div id="banner-list">
+            <ul>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="main-holder">
         <div class="banner">
-            <div>
-                <div class="searchBar">
-                    <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
-                    <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
-                    <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#666666" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
-                    </svg>
-                    </button>
-                </div>
+          <div>
+            <div class="searchBar">
+              <input
+                id="searchQueryInput"
+                type="text"
+                name="searchQueryInput"
+                placeholder="Search"
+                value=""
+              />
+              <button
+                id="searchQuerySubmit"
+                type="submit"
+                name="searchQuerySubmit"
+              >
+                <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    fill="#666666"
+                    d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
+                  />
+                </svg>
+              </button>
             </div>
-            <div id="account-info">
-                <img src="images/bell.png" width="20rem" height="20rem" alt="bell icon">
-                <img src="images/avatar.png" alt="user avatar" width="40rem" height="40rem">
-                <div>James Waring</div>
-            </div>
-            <div id="welcome-msg"><img src="images/avatar.png" alt="user avatar" width="100rem" height="100rem">Welcome JamesW! (@JamesW)</div>
-            <div id="account-info">
-                <div class="account-button">New</div>
-                <div class="account-button">Upload</div>
-                <div class="account-button">Share</div>
-            </div>
+          </div>
+          <div id="account-info">
+            <img
+              src="images/bell.png"
+              width="20rem"
+              height="20rem"
+              alt="bell icon"
+            />
+            <img
+              src="images/avatar.png"
+              alt="user avatar"
+              width="40rem"
+              height="40rem"
+            />
+            <div>James Waring</div>
+          </div>
+          <div id="welcome-msg">
+            <img
+              src="images/avatar.png"
+              alt="user avatar"
+              width="100rem"
+              height="100rem"
+            />Welcome JamesW! (@JamesW)
+          </div>
+          <div id="account-info">
+            <div class="account-button">New</div>
+            <div class="account-button">Upload</div>
+            <div class="account-button">Share</div>
+          </div>
         </div>
         <div class="inner-content">
-          <div class="projects">
+          <div class="projects" id="projects">
             <div class="project-card" id="first-card">
               <div class="add-card" id="add-msg">Click to add</div>
-              <form id="new-card" style="display: none;">
-                <input type="text" id="task-title" placeholder="Task Title" maxlength="25">
-                <input type="text" id="task-details" placeholder="task details" maxlength="250">
-                <input type="submit" class="task-btn" id="task-btn">
-               </form>
+              <form id="new-card" style="display: none">
+                <input
+                  type="text"
+                  id="task-title"
+                  placeholder="Task Title"
+                  maxlength="25"
+                />
+                <input
+                  type="text"
+                  id="task-details"
+                  placeholder="task details"
+                  maxlength="250"
+                />
+                <input type="submit" class="task-btn" id="task-btn" />
+              </form>
             </div>
-            <div class="project-card">
-                <div class="card-title">First to-do item</div>
-                <div class="card-text">
-                  This card is just a placeholder to show you what an existing card looks like.
-                  Click on the one to the left to add a new task which should appear on the next
-                  avaiable card.
-                </div>
-                <div class="card-icons">
-                  <img src="images/share.svg" width="20px" height="20px" />
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="card-title">Cool Project</div>
-                <div class="card-text">Nothing here yet...</div>
-                <div class="card-icons">
-                  <img src="images/share.svg" width="20px" height="20px" />
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="card-title">Cool Project</div>
-                <div class="card-text">Nothing here yet...</div>
-                <div class="card-icons">
-                  <img src="images/share.svg" width="20px" height="20px" />
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="card-title">Cool Project</div>
-                <div class="card-text">Nothing here yet...</div>
-                <div class="card-icons">
-                  <img src="images/share.svg" width="20px" height="20px" />
-                </div>
-            </div>
-            <div class="project-card">
-              <div class="card-title">Cool Project</div>
-              <div class="card-text">Nothing here yet...</div>
-              <div class="card-icons">
-                <img src="images/share.svg" width="20px" height="20px" />
-              </div>
-          </div>
           </div>
           <div class="right-content">
             <div></div>
